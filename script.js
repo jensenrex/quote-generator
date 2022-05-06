@@ -10,7 +10,7 @@ let apiQuotes = [];
 // loading function to show loading 
 function loading() {
   loader.hidden = false; 
-  quoteContainer = true; 
+  quoteContainer.hidden = true; 
 }
 // hide loading 
 function complete() {
@@ -48,6 +48,7 @@ async function getQuotes() {
   try {
     const response = await fetch(apiUrl); 
     apiQuotes = await response.json(); 
+    console.log(apiUrl); 
     newQuote(); 
   } catch (error) {
     //catch error here
@@ -61,7 +62,7 @@ function tweetQuote() {
 }
 
 //event listeners
-newQuoteBtn.addEventListener('click', newQuote);
+newQuoteBtn.addEventListener("click", newQuote);
 twitterBtn.addEventListener('click', tweetQuote); 
 
 // on load 
