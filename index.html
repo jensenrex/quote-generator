@@ -10,12 +10,31 @@
 
     <title>Quote Generator</title>
     <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=css-tricks.com">
-    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <i class="fa-thin fa-alarm-plus"></i>
-    <h1>cool stuff happening here!</h1>
+    <div class="quote-container container-md border-danger">
+    <!-- quote -->
+      <div class="quote-text text-wrap">
+        <i class="fas fa-quote-left"></i>
+        <span id="quote">
+          <!-- Capoeira eh todo que a boca come -->
+        </span>
+      </div>
+      <div class="quote-author text-capitalize fst-italic">
+        <span id="author">
+          <!-- mestre pastinha -->
+        </span>
+      </div>
+      <!-- buttons -->
+      <div class="button-container">
+        <button class="twitter-button" id="twitter" title="Tweet This!">
+          <i class="fab fa-twitter"></i></button>
+        <button class="new-quote btn btn-lg btn-outline-primary">New Quote</button>
+      </div>
+    </div>
+    <div class="loader" id="loader"></div>
     <!-- Script -->
     <script src="script.js"></script>
 
